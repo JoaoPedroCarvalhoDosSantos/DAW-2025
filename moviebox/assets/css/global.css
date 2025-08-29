@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+font-optical-sizing: auto;
+
+    background-color: #1c1c1c;
+    color: #ededed;
+}
+
+/* HEADER - Cabeçario */
+
+    /* t r b l: topo / right / botton * left
+    y x: altura / Lado
+    g: global todos 
+    REM: Proporcional no lugar de px 
+    1 rem = 16px*/
+header {
+    padding: 1rem 32px;
+    /* TO-DO: Adicionar aqui as configurações flutuantes */
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*alinha um no lado do outro e no centro*/
+}
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* MAIN - Principal */
+
+/* FOOTER - Rodapé */
+

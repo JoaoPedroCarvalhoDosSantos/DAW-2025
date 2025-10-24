@@ -1,9 +1,12 @@
+import { Header } from "./components/layout/Header"
+import { Footer } from "./components/layout/footer"
+
 function App() {
 
   return (
-
     <>
-    <header />
+      <Header/>
+      <Footer/>
     </>
   )
 }

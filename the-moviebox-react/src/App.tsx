@@ -2,18 +2,24 @@ import { MovieContent } from "./assets/cases/movies/components/movie-content";
 import { Footer } from "./components/layout/footer";
 import { Header } from "./components/layout/header";
 import { Navbar } from "./components/layout/navbar";
+import Highlight from "./components/layout/highlight";
+
 
 function App() {
   return (
-    <>
+    <> 
       <Header />
+      
       <main>
-        <Navbar/>
+        <Navbar />
+        <Highlight />
+
         <MovieContent />
+
       </main>
-      <Footer />
+      <Footer  />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

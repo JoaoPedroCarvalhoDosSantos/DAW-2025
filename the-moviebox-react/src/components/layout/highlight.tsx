@@ -1,8 +1,9 @@
 import type { FC } from "react";
 
-
+//Componente Responsavel por exibir o destaque principal da página inicial
 const Highlight: FC = () => {
   return (
+//Section com a imagem de fundo
     <section
       className="flex bg-cover relative"
       style={{

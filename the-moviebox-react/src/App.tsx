@@ -4,7 +4,7 @@ import { Header } from "./components/layout/header";
 import { Navbar } from "./components/layout/navbar";
 import Highlight from "./components/layout/highlight";
 
-
+//Componente principal
 function App() {
   return (
     <> 

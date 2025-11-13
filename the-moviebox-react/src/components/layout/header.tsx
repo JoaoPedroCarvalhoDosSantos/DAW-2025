@@ -1,4 +1,6 @@
 
+// Foi convertido do HTML original para JSX e estilizado com classes utilitárias do Tailwind CSS.
+
 export function Header() {
     return (
         <header className="py-4 px-8">

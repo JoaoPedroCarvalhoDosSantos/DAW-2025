@@ -1,4 +1,7 @@
 import type { FC } from "react";
+export function Highlight(){
+  const {selectedMovie} = useMovies();
+}
 
 //Componente Responsavel por exibir o destaque principal da página inicial
 const Highlight: FC = () => {
@@ -44,6 +47,7 @@ const Highlight: FC = () => {
               amigo de um dragão ferido chamado Banguela. Juntos, eles desafiam as tradições
               de suas tribos e descobrem que dragões não são os monstros que todos acreditavam ser.
             </p>
+            {JSON.stringify(selectedMovie)}
           </div>
 
           <div className="flex gap-4 my-6">

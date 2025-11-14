@@ -1,4 +1,4 @@
-import { Children, createContext, useState, type ReactNode } from "react";
+import { createContext, useState, type ReactNode } from "react";
 import type { MovieDTO } from "../services/movie.service";
 
 type MovieContextProps = {
@@ -6,19 +6,20 @@ type MovieContextProps = {
     setSelectedMovie: (movie: MovieDTO) => void;
 }
 
-const MovieContext = createContext<MovieContextProps | undefined>(undefined);
+const MovieContext = createContext<MovieContextProps | undefined> (undefined);
 
 
+export function MovieContextProvider({
+    children
+}: {children: ReactNode}) {
+    const[ selectedMovie,  setSelectedMovie] = useState<MovieDTO | null>(null);
 
-export function MovieContextProvider((
-    Children
-); {children: ReactNode}) {
+   
 
-    const [selectedMovie, setSelectedMovie] = useState<MovieDTO | null>(null);
+    return (
 
-    return(
-        <MovieContext.Provider value=({selectedMovie, setSelectedMovie})>
-        {children}
+        <MovieContext.Provider value={{selectedMovie, setSelectedMovie}}>
+            {children}
         </MovieContext.Provider>
 
     )
